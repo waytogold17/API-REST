@@ -1,3 +1,5 @@
+code sql pour créer la table dans la base de donnée créée auparavant:
+
 CREATE TABLE IF NOT EXISTS `Etudiant` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nom` varchar(256) NOT NULL,
@@ -10,7 +12,10 @@ CREATE TABLE IF NOT EXISTS `Etudiant` (
   PRIMARY KEY (`id`)
 )ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19;
 
-INSERT INTO `Etudiant` (`id`, `nom`, `prenom`, `age`, `email`,'adresse','niveau', `created`) VALUES 
+
+code pour l'insertion dans la table Etudiant 
+
+INSERT INTO `Etudiant` (`id`, `nom`, `prenom`, `age`, `email`,`adresse`,`niveau`, `created`) VALUES 
 (1, 'John', 'Doe',32,'johndoe@gmail.com', 'Data Scientist road ','BAC +5', '2012-06-01 02:12:30'),
 (2, 'David','Costa',29, 'sam.mraz1996@yahoo.com',  'Apparel Patternmaker road ','BAC +4', '2013-03-03 01:20:10'),
 (3, 'Todd','Martell',36, 'liliane_hirt@gmail.com',  'Accountantroad ','BAC +8', '2014-09-20 03:10:25'),
